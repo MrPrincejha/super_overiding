@@ -14,6 +14,8 @@ class B(A):
         print(super().classvar)
 a = A()
 b = B()
+c = C()
 
 print(b.classvar)
+print(c.classvar)
 # print(b.special) overring is necessary to access it
