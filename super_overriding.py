@@ -1,10 +1,11 @@
+# First class
 class A:
     classvar = "i am classvar in class A"
     def __init__(self):
         self.var = "i am in class A's constructor"
         self.classvar = "instance var in class a"
         self.special = "special"
-
+# Second class
 class B(A):
     classvar = "i am classvar in class B"
     def __init__(self):
@@ -12,6 +13,8 @@ class B(A):
         self.var = "i am in class B's constructor"
         self.classvar = "instance var in class B"
         print(super().classvar)
+        
+# Instanctiang objects from above classes
 a = A()
 b = B()
 c = C()
